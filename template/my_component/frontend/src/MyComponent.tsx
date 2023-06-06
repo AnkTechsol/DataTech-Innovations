@@ -8,6 +8,8 @@ import About from "./About";
 
 import { Link } from "react-scroll";
 
+import logo_of_datatech_innovations from './logo_of_datatech_innovations.png';
+
 
 const MyComponent = () => {
 
@@ -38,7 +40,7 @@ const MyComponent = () => {
     <>
         <>
           <nav>
-            <div className='logo'><h2>DataTech Innovations</h2></div>
+            <div className='logo'><h2><img src={logo_of_datatech_innovations} alt="Logo" />DataTech Innovations</h2></div>
 
 
             <div className='item-cont'>
@@ -58,7 +60,7 @@ const MyComponent = () => {
           </nav>
           <Welcome/>
           <div id='Services'><Cards/></div>
-          <div id="Contact us"></div><Contact/>
+          <div id="Contact Us"></div><Contact/>
           <div id="About us"></div><About/>
         </>
     </>

@@ -10,7 +10,7 @@ const Contact = () => {
       <p>how DataTech Innovations can help you unlock the true potential of your data.</p>
 
 
-      <form action="https://formspree.io/f/mknaapvv" method="post">
+      <form action="" method="post"> 
         <div className='inputs'>
 
 
