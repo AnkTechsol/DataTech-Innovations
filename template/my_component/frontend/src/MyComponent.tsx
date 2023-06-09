@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import './style.css';
 import Cards from "./Cards";
 import Welcome from "./Welcome";
@@ -60,8 +59,8 @@ const MyComponent = () => {
           </nav>
           <Welcome/>
           <div id='Services'><Cards/></div>
-          <div id="Contact Us"></div><Contact/>
           <div id="About us"></div><About/>
+          <div id="Contact Us"></div><Contact/>
         </>
     </>
 

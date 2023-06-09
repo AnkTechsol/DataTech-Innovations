@@ -21,29 +21,34 @@ const Cards = () => {
 
   const Cont = styled.div`
     width : 1600px;
-    margin-bottom:50px;
+    height: 550px;
+    margin-top:200px;
+    margin-left:50px
 `;
 
 const CardHeader = styled.h3`
-font-size: 18px;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Gentium+Book+Plus:wght@700&family=Geologica:wght@300&family=Josefin+Sans:wght@400;500&family=Kanit:wght@400;800&family=Karla&family=Mukta:wght@700&family=PT+Sans:wght@700&family=Raleway:ital,wght@0,300;1,400&display=swap');
 font-weight: bold;
 margin-bottom: 10px;
-color:black;
+color:white;
+text-align:center;
 font-weight:900;
-font-size:2rem;
+font-size:3rem;
+font-family: 'Kanit', sans-serif;
 `;
 
 
 const Marg = styled.div`
-margin-top : 300px;
 text-align:center;
-border: 3px dotted green;
-border-radius: 20px;
-width:95%;
-margin-left:50px;
+background-color: whitesmoke;
 `;
 
 
+const H1 = styled.div`
+font-size:4rem;
+font-weight:700;
+font-family: 'Kanit', sans-serif;
+`;
 
 
 
@@ -51,9 +56,8 @@ margin-left:50px;
     
   return (
     <>
-       <Marg>
-        <h1>Our Services</h1>
-      <hr></hr>
+       <Marg className='margstyle'>
+        <H1>Our Services</H1>
       <Cont>
       <Carousel breakPoints={breakPoints} isRTL={false} enableMouseSwipe={true}   itemsToScroll={1}  enableAutoPlay={true} autoPlaySpeed={2000} easing="ease" transitionMs={1000}  enableSwipe={true} pagination={false} preventDefaultTouchmoveEvent={true}>
           {duplicatedItems.map((item, index) => (
