@@ -71,7 +71,7 @@ nav .item-cont a:hover{
   
   width: 100%;
   height: 720px;
-  background: url("bg1.png") no-repeat center center fixed;
+  background: url("bg-custom.png") no-repeat center center;
   background-size: cover;
   opacity: 100%;
   align-items: center;
@@ -92,7 +92,7 @@ nav .item-cont a:hover{
   font-weight: 700;
   font-size: 2rem;
   margin-left: 100px;
-  color: rgb(36, 36, 36);
+  color: white;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -100,7 +100,7 @@ nav .item-cont a:hover{
   width: 200px;
   height: 50px;
   border-radius: 5px;
-  background-color: rgb(233, 159, 75);
+  background-color: rgba(234, 179, 116, 0.716);
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 100px;
@@ -108,6 +108,7 @@ nav .item-cont a:hover{
   display: grid;
   align-items: center;
   text-align: center;
+  line-height: 0px; 
 }
 
 
@@ -127,17 +128,20 @@ nav .item-cont a:hover{
 
 
 .contact{
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(168, 166, 166);
   height: 820px;
   align-items: center;
   
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=DM+Sans:wght@500&family=Josefin+Sans:wght@300&family=Kanit:wght@200&family=Ubuntu:wght@400;500&display=swap');
 .contact h1{
   text-align: center;
-  font-size: 4rem;
-  font-weight: 600;
-  font-family: 'Kanit', sans-serif;
+  font-size:4rem;
+  font-weight:800;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 50px;
+
 }
 
 .contact p{
@@ -183,9 +187,9 @@ nav .item-cont a:hover{
 
 
 .about{
-  height: 750px;
+  height: 820px;
   text-align: center;
-  background: linear-gradient(to right, rgb(81, 81, 81), #838383, #b0b0b0);
+  background: linear-gradient(to right, rgb(81, 81, 81), #838383, #8e8d8d);
   font-family: 'Kanit', sans-serif;
 }
 
@@ -194,32 +198,64 @@ nav .item-cont a:hover{
   display: flex;
   font-family: 'Karla', sans-serif;
   justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  width: 90%;
+  flex-direction: row;
+
+}
+
+.about-p .p1{
+  width: 100%;
+  flex-basis: 33%;
 }
 .about-image{
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+  margin-left: 100px;
+  width: 89%;
+  flex-basis: 33%;
 }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Kanit:wght@200&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=DM+Sans:wght@500&family=Josefin+Sans:wght@300&family=Kanit:wght@200&family=Ubuntu:wght@400;500&display=swap');
 .about h1{
-  font-size: 4rem;
+  font-size:4rem;
+  font-weight:700;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 50px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Josefin+Sans:wght@300&family=Kanit:wght@200&family=Ubuntu:wght@400;500&display=swap');
 .about p{
-  font-size: 1.4rem;
-  justify-content: center;
+  font-size: 1.5rem;
+  justify-content:center;
   margin-left: 20px;
   margin-right: 20px;
-  font-family: 'Karla', sans-serif;
-  color: #DDDDDD;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+  flex-basis: 33%;
+  text-align: center;
 }
 
 .about .about-last{
   font-size: 1.5rem;
   font-weight: 600;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: 'Karla', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: transparent;
+  height: 200px;
+  display: grid;
+  align-items: center;
+  background: linear-gradient(to right, #5a5959, #909090);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border-left: 15px solid black;
 }
 
 .logo img{
